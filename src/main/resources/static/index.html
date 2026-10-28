@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>COD Reconciliation</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <script defer src="/js/app.js"></script>
+</head>
+<body>
+<div class="shell">
+    <aside class="sidebar" id="sidebar">
+        <a class="brand" href="#dashboard"><span class="brand-mark">C</span><span>COD <strong>Reconcile</strong></span></a>
+        <p class="nav-label">Workspace</p>
+        <nav aria-label="Main navigation">
+            <a href="#dashboard" data-nav="dashboard"><span class="nav-icon">⌂</span>Dashboard</a>
+            <a href="#orders" data-nav="orders"><span class="nav-icon">▤</span>Orders</a>
+            <a href="#upload" data-nav="upload"><span class="nav-icon">⇧</span>Upload &amp; Reconcile</a>
+            <a href="#history" data-nav="history"><span class="nav-icon">◷</span>Reconciliation History</a>
+        </nav>
+        <div class="sidebar-footer">
+            <div class="sidebar-user"><span class="status-dot"></span><span>Administrator workspace</span></div>
+            <span>Finance &amp; logistics operations</span>
+        </div>
+    </aside>
+    <div class="workspace">
+        <header class="topbar">
+            <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+            <div>
+                <p class="eyebrow">Operations console</p>
+                <h1 id="page-title">Dashboard</h1>
+            </div>
+            <div class="topbar-actions">
+                <a class="header-action" href="#upload"><span>＋</span> Upload report</a>
+                <button class="header-action logout-button" id="logout-button" type="button" hidden>Log out</button>
+            </div>
+        </header>
+        <main class="container">
+            <div id="notifications" class="notifications" aria-live="polite"></div>
+            <section id="app" aria-live="polite"></section>
+        </main>
+        <footer class="footer">COD Reconciliation System <span>•</span> Persistent MySQL storage</footer>
+    </div>
+</div>
+</body>
+</html>
